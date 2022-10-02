@@ -1,0 +1,82 @@
+.ourteam {
+  padding: 7.125em 0;
+  .ourteam-card {
+    width: 16.875em;
+    .ourteam-card-img {
+      width: 16.875em;
+      height: 16.875em;
+      overflow: hidden;
+      margin-bottom: 1.875em;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    .ourteam-card-name {
+      font-size: $_24px;
+      font-weight: 700;
+      color: $near_black;
+      text-transform: capitalize;
+      line-height: 1.76125em;
+      display: block;
+    }
+    .ourteam-card-position {
+      @include h5;
+      color: $red;
+      text-transform: uppercase;
+      line-height: 1.3125em;
+      display: block;
+      margin-bottom: 1.125em;
+    }
+    .ourteam-card-text {
+      color: $near_gray;
+      @include h5;
+      line-height: 1.3125em;
+      margin-bottom: 2.375em;
+    }
+    .ourteam-card-list {
+      // .ourteam-card-list_item
+
+      display: flex;
+      justify-content: start;
+
+      //   text-align: center;
+
+      &_item {
+        display: flex;
+        width: 2.4375em;
+        height: 2.4375em;
+        border: 1px solid $light_gray;
+        margin-right: 0.375em;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          font-size: $_18px;
+          color: $light_gray;
+
+          .fa-facebook-f:hover {
+            transition: 0.2s;
+            color: #3b5998;
+            transform-origin: top left;
+          }
+          .fa-twitter:hover {
+            transition: 0.2s;
+            color: #1da1f2;
+
+            transform-origin: center;
+          }
+          .fa-linkedin:hover {
+            transition: 0.2s;
+            color: #0e76a8;
+
+            transform-origin: center;
+          }
+        }
+      }
+    }
+  }
+}

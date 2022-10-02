@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+@import '_variables.scss';
+@import '_mixins.scss';
+@import '_cdn.scss';
+@import 'header.scss';
+@import 'features.scss';
+@import 'work.scss';
+@import 'ourteam.scss';
+@import 'download.scss';
+@import 'contacts.scss';
+@import 'footer.scss';
+
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 73.125em;
+  margin: auto;
+  padding: 0 0.9375em;
+  position: relative;
+  z-index: 2;
+}
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -0.9375em;
+}

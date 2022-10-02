@@ -1,0 +1,59 @@
+.work {
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  // .work_img
+
+  &_item {
+    width: 25%;
+    border: 0.125em solid $white;
+    position: relative;
+    overflow: hidden;
+
+    &:hover .work_item-mask {
+      display: flex;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+
+    &-inner {
+      width: 100%;
+      padding-top: 100%;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-mask {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      line-height: 1.76125em;
+      background: $red_mask;
+      @include h5;
+      color: white;
+      text-transform: capitalize;
+      &-title {
+        @include h4;
+        color: $white;
+        text-transform: uppercase;
+        margin-bottom: 2.286em;
+      }
+      display: none;
+    }
+  }
+}

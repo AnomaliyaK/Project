@@ -1,0 +1,74 @@
+.contacts {
+  padding: 4.5em 0;
+  background-color: $blue;
+
+  .contacts-item {
+    width: 23.125em;
+  }
+  // .contacts_title
+
+  &_title {
+    @include h5;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+    margin-bottom: 1.875em;
+    text-align: center;
+    line-height: 1.32em;
+  }
+
+  // .contacts_text
+
+  &_text {
+    @include h5;
+    color: $white;
+    line-height: 1.32em;
+    text-transform: capitalize;
+    display: flex;
+    text-align: center;
+  }
+}
+.contacts-second {
+  // .contacts-second_list
+
+  &-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5.25em;
+    text-align: center;
+    // .contacts-second_item
+
+    &_item {
+      display: flex;
+      width: 2.4375em;
+      height: 2.4375em;
+      border: 1px solid #ffffff;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        font-size: $_18px;
+        color: $light_gray;
+
+        .fa-facebook-f:hover {
+          transition: 0.2s;
+          color: #3b5998;
+          transform-origin: top left;
+          // transform: rotate(10deg) scale(1.2);
+        }
+        .fa-twitter:hover {
+          transition: 0.2s;
+          color: #1da1f2;
+          // transform: rotate(30deg) scale(1.5);
+          transform-origin: center;
+        }
+        .fa-linkedin:hover {
+          transition: 0.2s;
+          color: #0e76a8;
+          // transform: rotate(-90deg) scale(0.8);
+          transform-origin: center;
+        }
+      }
+    }
+  }
+}

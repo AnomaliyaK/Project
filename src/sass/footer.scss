@@ -1,0 +1,16 @@
+.footer {
+  padding: 1.5em 0 1.5em;
+  background-color: $dark_blue;
+}
+.footer-title {
+  width: 23.125em;
+  @include h5;
+  text-transform: capitalize;
+  color: $around_gray;
+  line-height: 1.32em;
+  margin: auto;
+  text-align: center;
+  .footer-title_second-part {
+    color: $white;
+  }
+}

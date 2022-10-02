@@ -1,0 +1,34 @@
+@mixin h1 {
+  font-weight: 900;
+  font-size: $_64px;
+  color: $white;
+}
+@mixin h4 {
+  font-weight: 900;
+  font-size: $_24px;
+  color: $near_black;
+}
+@mixin h5 {
+  font-weight: 400;
+  font-size: $_18px;
+}
+@mixin text {
+  font-weight: 400;
+  font-size: $_24px;
+  color: $white;
+}
+@mixin button {
+  width: 23.125em;
+  height: 5em;
+  font-weight: 900;
+  font-size: $_24px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $red;
+  border: 0;
+  font-family: 'Raleway', sans-serif;
+
+  //   line-height: 28px;
+}
