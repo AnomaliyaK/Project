@@ -57,3 +57,33 @@
     }
   }
 }
+.work {
+  @media (max-width: 910px) {
+    .work_item {
+      width: 33.33%;
+      &:nth-last-child(-n + 2) {
+        display: none;
+      }
+    }
+  }
+}
+.work {
+  @media (max-width: 600px) {
+    .work_item {
+      width: 50%;
+      &:nth-last-child(-n + 4) {
+        display: none;
+      }
+    }
+  }
+}
+.work {
+  @media (max-width: 320px) {
+    .work_item {
+      width: 100%;
+      &:nth-last-child(-n + 7) {
+        display: none;
+      }
+    }
+  }
+}

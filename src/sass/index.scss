@@ -36,3 +36,42 @@ html {
   flex-wrap: wrap;
   margin: 0 -0.9375em;
 }
+// .header,
+// .features,
+// .work,
+// .ourteam,
+// .download,
+// .contacts,
+// .footer {
+//   display: none;
+// }
+@media (max-width: 920px) {
+  html {
+    font-size: $_14px;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: $_13px;
+  }
+}
+@media (max-width: 650px) {
+  html {
+    font-size: $_12px;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: $_11px;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: $_10px;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: $_8px;
+  }
+}

@@ -4,7 +4,7 @@
   .download-text {
     color: $black;
     font-size: $_30px;
-    line-height: 0.75em;
+    line-height: 1.76em;
     font-weight: 500;
     margin-bottom: 1em;
     text-transform: capitalize;
@@ -17,7 +17,7 @@
     @include h5;
 
     font-weight: 700;
-    line-height: 1.32em;
+    line-height: 1em;
     text-transform: uppercase;
     margin-bottom: 3.125em;
     display: flex;

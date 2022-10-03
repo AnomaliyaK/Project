@@ -93,7 +93,6 @@
     .header-text {
       @include text;
       margin-bottom: 5.125rem;
-
       line-height: 1.761em;
       text-align: center;
     }
@@ -115,4 +114,45 @@
       }
     }
   }
+}
+
+// Adaptive
+
+header {
+  @media (max-width: 780px) {
+    .navigation {
+      display: none;
+    }
+  }
+  @media (min-width: 780px) {
+    .navigation-btn {
+      display: none;
+    }
+  }
+}
+
+//  Burger menu
+
+.navigation-btn {
+  width: 6.125em;
+  height: 2em;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.navigation-btn span {
+  width: 3em;
+  height: 0.25em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+  transition: all 0.5s;
+}
+.navigation-btn span:nth-of-type(2) {
+  top: calc(50% - 0.75em);
+}
+.navigation-btn span:nth-of-type(3) {
+  top: calc(50% + 0.75em);
 }

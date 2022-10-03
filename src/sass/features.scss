@@ -18,6 +18,13 @@
     width: 6.25em;
     height: 6.25em;
     margin: 0 auto 1.75em;
+    overflow: hidden;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   // .features_item-title
@@ -35,5 +42,31 @@
     @include h5;
     text-align: center;
     line-height: 1.321em;
+  }
+}
+
+// Adaptive
+
+.features {
+  @media (max-width: 1140px) {
+    .features_item {
+      margin: 0 0.9375em;
+      &:nth-child(-n + 4) {
+        margin-bottom: 5.473em;
+      }
+    }
+
+    .wrap {
+      justify-content: space-evenly;
+    }
+  }
+  @media (max-width: 550px) {
+    .features_item {
+      margin: 0 0.9375em;
+      width: 85%;
+      &:nth-child(-n + 5) {
+        margin-bottom: 5.473em;
+      }
+    }
   }
 }

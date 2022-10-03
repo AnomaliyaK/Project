@@ -1,9 +1,13 @@
 .contacts {
   padding: 4.5em 0;
   background-color: $blue;
-
+  .wrap {
+    align-items: flex-start;
+  }
   .contacts-item {
     width: 23.125em;
+
+    // margin: 0 0.9375em;
   }
   // .contacts_title
 
@@ -69,6 +73,19 @@
           transform-origin: center;
         }
       }
+    }
+  }
+}
+.contacts {
+  @media (max-width: 1110px) {
+    .contacts-item {
+      margin: 0 0.9375em;
+      &:nth-child(-n + 2) {
+        margin-bottom: 5.473em;
+      }
+    }
+    .wrap {
+      justify-content: center;
     }
   }
 }
