@@ -13,6 +13,7 @@
 @import 'features.scss';
 @import 'work.scss';
 @import 'ourteam.scss';
+@import 'testimonials.scss';
 @import 'download.scss';
 @import 'contacts.scss';
 @import 'footer.scss';
@@ -55,12 +56,12 @@ html {
     font-size: $_13px;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 658px) {
   html {
     font-size: $_12px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 607px) {
   html {
     font-size: $_11px;
   }
